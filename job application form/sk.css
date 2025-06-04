@@ -9,7 +9,7 @@
 background-color: antiquewhite;
    display: grid;
    grid-template-columns: repeat(auto-);
-   place-items: center;
+    place-items: center;
      border: radius 4px solid black; 
        gap: 5pxs;
  
