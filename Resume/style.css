@@ -1,21 +1,14 @@
 .main{
-   display: grid;
-    height: 1000px;
-   grid-template-columns: 300px 700px;
+   display: flex;
 }
 
-.left-sectoin{
+.left-section{
     height: 1000px;
    background-color: rgb(44, 47, 47);
    padding: 1rem;
    
 }
 
-.right-section{
-    height: 1000px;
-  
-   background-blend-mode: darken;
-}
 #profile-image{
        width: 28%;
     border: 5px solid #fff;
@@ -112,16 +105,7 @@
    letter-spacing: 1px;
    text-transform: uppercase;
 }
+
 .education-details-2{
    display: flex;
-
 }
-
-.about-me-section{
-  
-}
-.Details-right-section{
-   
-}
-
- 
