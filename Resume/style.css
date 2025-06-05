@@ -40,7 +40,7 @@
    color: #fff;
 }
 .description{
-   font-size: 0.75rem;
+   font-size: 13px;
    text-align: center;
    padding: 1rem;
    color: #fff;
@@ -55,6 +55,7 @@
 .contack-details{
    margin-top: 1.5rem;
    color: #fff;
+   font-size:18px;
 }
 .email{
    margin-left: 11px;
@@ -68,7 +69,7 @@
 .skills-section{
    text-transform: uppercase;
      text-align: center;
-     padding: 1rem 0.5rem;
+     padding: 0rem 0.5rem;
      color: #fff;
 }
 .skill{
