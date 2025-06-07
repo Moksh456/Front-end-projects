@@ -109,3 +109,20 @@
 .education-details-2{
    display: flex;
 }
+.education-details{
+   display: flex;
+}
+.expereience{
+   font-size: 37px;
+}
+
+.left-section{
+   height: 100vh;
+   width: 50svh;
+}
+@media(max-width: 600px){
+   .main{
+       display: contents;
+   }
+}
+
