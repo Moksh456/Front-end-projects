@@ -34,21 +34,20 @@ margin: 40px;
 }
 @keyframes raja {
   from{
-    border: solid red 4px;
+    border: solid red 2px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 
   }
   to{
     border: solid lightgreen
-    4px;
+    2px;
   }
 }
  
 
 input{
   margin: 10px;
-  animation: raja;
-animation-duration: 1s;
-animation-iteration-count: infinite;
+ 
 }
 
 button{
