@@ -17,8 +17,8 @@ background-color: antiquewhite;
 
 
 .child{
-width: 400px;
-height: 400px; ;
+width: auto;
+height: auto; ;
 box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
  
  
@@ -26,8 +26,23 @@ box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
  border: solid ;
  gap: 4px;
 border-radius: 30px;
- 
+animation: raja;
+animation-duration: 1ms;
+animation-iteration-count: infinite;
+margin: 40px;
+
 }
+@keyframes raja {
+  from{
+    border: solid red 6px;
+
+  }
+  to{
+    border: solid green;
+  }
+}
+ 
+
 input{
   margin: 10px;
 }
