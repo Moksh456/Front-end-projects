@@ -46,6 +46,9 @@ margin: 40px;
 
 input{
   margin: 10px;
+  animation: raja;
+animation-duration: 1s;
+animation-iteration-count: infinite;
 }
 
 button{
