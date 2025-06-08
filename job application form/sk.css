@@ -27,18 +27,19 @@ box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
  gap: 4px;
 border-radius: 30px;
 animation: raja;
-animation-duration: 1ms;
+animation-duration: 1s;
 animation-iteration-count: infinite;
 margin: 40px;
 
 }
 @keyframes raja {
   from{
-    border: solid red 6px;
+    border: solid red 4px;
 
   }
   to{
-    border: solid green;
+    border: solid lightgreen
+    4px;
   }
 }
  
