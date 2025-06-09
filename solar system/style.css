@@ -59,7 +59,9 @@ body {
     margin-left: -15px; margin-top: -15px;
 }
 .planet.neptune {
-  width: 26px; height: 26px; background: #4169e1; animation: orbit-neptune 21s linear infinite;
+  width: 26px; height: 26px; background: #4169e1; 
+  
+  animation: orbit-neptune 21s linear infinite;
   margin-left: -13px; margin-top: -13px;
 }
 @keyframes orbit-mercury {
@@ -91,6 +93,11 @@ body {
   100% { transform: rotate(360deg) translateX(320px) translateY(-50%) scale(1); }
 }
 @keyframes orbit-neptune {
-  0% { transform: rotate(0deg) translateX(370px) translateY(-50%) scale(1); }
-  100% { transform: rotate(360deg) translateX(370px) translateY(-50%) scale(1); }
+  0% { 
+    transform: rotate(0deg) translateX(370px) translateY(-50%) scale(1);
+   }
+
+  100% { 
+    transform: rotate(360deg) translateX(370px) translateY(-50%) scale(1); 
+  }
 }
