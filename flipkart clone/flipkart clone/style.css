@@ -44,22 +44,47 @@ body{
   }
 
   .sales{
-    display:flex;
-    justify-content: space-around;
-    background-color: goldenrod;
-    animation: raja;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
+  display:flex;
+  justify-content: flex-start;
+  background-color: goldenrod;
+  animation: raja;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 16px;
+  padding-bottom: 8px;
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
+.sales::-webkit-scrollbar {
+  height: 8px;
+}
+.sales::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.sales::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
   @keyframes raja {
      
   }
+  p{
+    background-color: white;
+    border-radius: 4px;
 
-  .sales:hover{
-    animation: raja;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    font-size: larger;
+    padding: 4px;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+ 
+  p:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
   }
 
   .sales h2{
@@ -90,7 +115,16 @@ body{
       transform: scale(1.1);
       transition: all 0.3s ease-in-out;
   }
-  
+
+
+
+p:hover{
+    color: white;
+    border-radius: 9px;
+    padding: 6px; 
 
     
- 
+}
+p{
+  
+}
