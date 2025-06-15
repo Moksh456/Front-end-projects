@@ -167,7 +167,7 @@ section.first>div :nth-child(2) {
 }
 .feq-box{
   
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
@@ -178,6 +178,50 @@ section.first>div :nth-child(2) {
     cursor: pointer;
 }
 .feq-box:hover {
-    background-color: #414141;
+    background-color: #891e1e;
     color: white;
 }
+
+ 
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer-items{
+   display: flex;
+   flex-direction: column;
+   color: white;
+   gap: 23px;
+}
+.footer-item{
+   display: flex;
+   flex-direction: column;
+   color: white;
+   gap: 23px;
+}
+footer span{
+   text-align: center;
+   max-width: 60vw;
+   margin: auto;
+}
+footer a{
+   color: white;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+
