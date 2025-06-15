@@ -116,22 +116,26 @@ border: solid 1px white;
         text-align: left;
 width: 21rem; 
 }
-.first{ 
+ .first{
    display: flex;
-   justify-content: space-around;
+   color: white;
+   justify-content: center;
    align-items: center;
-   gap: 10px;
-   margin-top: 20px;
-   color: whitesmoke;
+ }
+
+ .first-box{
+   position: relative;
+ }
+.first-box img{
+   width: 30vw;
+   position: absolute;
+top: 0;
+z-index: 10;
+
 }
 
-.first-box img{
-   position: relative;
-}
 .first-box video{
-   width: 30vw;
-}
-.first-box video{
-   position: inherit;
-}
+position: absolute;
+ width: 30vw;
  
+}
