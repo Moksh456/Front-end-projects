@@ -85,7 +85,34 @@
    background-color: rgb(49, 48, 48);
    height: 7px;
 }
-
+button{
+   padding: 8px;
+   font-weight: bold;
+}
+button{
+   border-radius: 3px;
+}
 .btn{
+padding: 8px;
+font-weight: bold;
+background-color: rgba(105, 101, 101, 0.6);
+color: white;
+border: solid 1px white;
+
+
+}
+.red-btn{
+   background-color: red;
+   color: rgb(255, 255, 255);
+   border-radius: 7px;
    
+}
+.main input{
+   border-radius: 5px;
+    padding: 6px 46px;
+        background-color: rgba(23, 23, 23, 0.6);
+        font-weight: 800;
+        color: white;
+        text-align: left;
+ 
 }
