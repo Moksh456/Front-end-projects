@@ -116,9 +116,12 @@ border: solid 1px white;
         text-align: left;
 width: 21rem; 
 }
-.first{
-   color: white;
+.first{ 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      color: whitesmoke;
 }
-.first-box{
-   color: white;
-}
+ 
