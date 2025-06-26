@@ -311,4 +311,6 @@ button{
     gap: 23px;
 }
 
-
+ .p{
+    display: none;
+ }

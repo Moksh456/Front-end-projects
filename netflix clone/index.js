@@ -1,0 +1,1 @@
+ let feqbox = document.querySelectorAll(".feq-box")
