@@ -87,14 +87,19 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  overflow-x: unset;
+  scroll-snap-type: none;
+  padding-bottom: 0;
 }
 .project {
+  min-width: 220px;
+  flex: 1 1 250px;
+  scroll-snap-align: unset;
   background: #23232b;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
   padding: 24px 20px;
-  flex: 1 1 250px;
-  min-width: 220px;
+  margin-bottom: 8px;
   transition: box-shadow 0.2s, transform 0.2s;
   transform: scale(1) translateY(0);
 }
@@ -175,17 +180,18 @@ section {
   height: 140px;
   border-radius: 50%;
   border: 6px solid #f72585;
-  box-shadow: 0 0 0 0 #f72585;
+  box-shadow: 0 0 0 0 #f72585, 0 0 40px 10px #4361ee99, 0 0 80px 20px #f7258577;
   animation: glow 2s infinite alternate;
   object-fit: cover;
   background: #23232b;
+  object-position: center;
 }
 @keyframes glow {
   0% {
-    box-shadow: 0 0 0 0 #f72585, 0 0 20px 0 #f7258544;
+    box-shadow: 0 0 0 0 #f72585, 0 0 20px 0 #4361ee44, 0 0 40px 0 #f7258544;
   }
   100% {
-    box-shadow: 0 0 40px 10px #f72585, 0 0 60px 20px #f7258544;
+    box-shadow: 0 0 40px 10px #f72585, 0 0 60px 20px #4361ee99, 0 0 120px 40px #f7258577;
   }
 }
 @media (max-width: 700px) {
