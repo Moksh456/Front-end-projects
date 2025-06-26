@@ -1,8 +1,6 @@
- document.querySelector('.guru').addEventListener('click', function () {
-  const paragraph = document.querySelector('.p');
-  if (paragraph.style.display === 'none') {
-    paragraph.style.display = 'block';
-  } else {
-    paragraph.style.display = 'none';
-  }
-});
+ const quetion = document.querySelector('.feq-box');
+ quetion.forEach((quetion) => {
+    quetion.addEventListener('click', () => {
+        const answere = quetion.nextElementSibling; 
+        answere.style.display = answere.style.display === 'block' ? 'none' : 'block'})
+} );
