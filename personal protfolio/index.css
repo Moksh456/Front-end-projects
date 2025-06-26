@@ -1,5 +1,131 @@
 body {
   font-family: 'Poppins', Arial, sans-serif;
+  background: #000;
+  color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: none;
+  animation: none;
+}
+
+/* --- Force All Backgrounds to Black --- */
+body, .container, .project, .skills li, .experience-list li, .profile-pic-container, .footer, .header, section, main, .nav, .social-links, .profile-pic, .about, .skills, .projects, .contact {
+  background: #000 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Glassmorphism for containers/cards */
+.container, .project, .skills li, .experience-list li, .profile-pic-container, .footer, .header {
+  background: rgba(10, 10, 10, 0.92);
+  box-shadow: 0 8px 32px 0 #0008, 0 1.5px 8px 0 #f7258522;
+  -webkit-backdrop-filter: blur(6px) saturate(120%);
+  backdrop-filter: blur(6px) saturate(120%);
+  border: 1.5px solid rgba(255,255,255,0.04);
+}
+
+.header, .footer {
+  background: rgba(0, 0, 0, 0.98);
+  box-shadow: 0 4px 24px #000a, 0 2px 8px rgba(0,0,0,0.18);
+}
+
+/* Profile pic glow upgrade */
+.profile-pic {
+  border: 6px solid #f72585;
+  box-shadow: 0 0 0 0 #f72585, 0 0 40px 10px #8f94fb99, 0 0 80px 20px #f7258577;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 #f72585, 0 0 20px 0 #8f94fb44, 0 0 40px 0 #f7258544;
+  }
+  100% {
+    box-shadow: 0 0 40px 10px #f72585, 0 0 60px 20px #8f94fb99, 0 0 120px 40px #f7258577;
+  }
+}
+
+/* Colorful border only for project cards (no background or shadow) */
+.project {
+  background: #000 !important;
+  border: 3px solid transparent;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: none !important;
+}
+.project::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  z-index: -1;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f72585, #7209b7, #4361ee, #4cc9f0, #f72585 90%);
+  background-size: 300% 300%;
+  animation: borderAnim 4s linear infinite;
+  padding: 0;
+}
+@keyframes borderAnim {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.project:hover {
+  box-shadow: 0 8px 48px #f72585cc, 0 2px 16px #8f94fb99;
+  border: 1.5px solid #f72585;
+  transform: translateY(-12px) scale(1.07) rotate(-1deg);
+}
+
+/* Skills pill wow effect */
+.skills li {
+  background: rgba(30, 30, 30, 0.92);
+  color: #f72585;
+  border: 1.5px solid #18181b;
+  box-shadow: 0 2px 8px #0004;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+.skills li:hover {
+  background: #f72585;
+  color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: 0 4px 16px #f72585cc;
+}
+
+/* Nav wow effect */
+.nav a {
+  color: #fff;
+  text-shadow: 0 2px 8px #4e54c844;
+  letter-spacing: 1.2px;
+  border-radius: 8px;
+  padding: 4px 12px;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.nav a:hover {
+  color: #f72585;
+  background: rgba(67, 97, 238, 0.12);
+  box-shadow: 0 2px 12px #f72585cc;
+  transform: translateY(-3px) scale(1.12);
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.98);
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  font-size: 1rem;
+  margin-top: 48px;
+}
+body {
+  font-family: 'Poppins', Arial, sans-serif;
   background: #18181b;
   color: #e5e5e5;
   margin: 0;
