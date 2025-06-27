@@ -29,6 +29,10 @@ html, body {
   100% { background-position: 0% 50%; }
 }
 
+.nav-links{
+  margin-right: 32px;
+}
+
 /* ====== Enhanced Navbar Animation & Style ====== */
 .navbar {
   display: flex;
@@ -53,6 +57,7 @@ html, body {
   background: linear-gradient(90deg, rgba(0,195,255,0.38) 0%, rgba(255,107,203,0.38) 100%), var(--glass);
   box-shadow: 0 12px 48px 0 rgba(0,195,255,0.25), 0 2.5px 0 0 var(--accent2);
   border-bottom: 3px solid var(--accent);
+  -webkit-backdrop-filter: blur(24px) brightness(1.08);
   backdrop-filter: blur(24px) brightness(1.08);
 }
 .logo {
