@@ -1,10 +1,8 @@
-/* Clean, modern, and readable CSS for your study material website */
-
+/* Animated gradient background */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  /* Attractive animated gradient background */
   background: linear-gradient(120deg, #f4f6fb 0%, #e0c3fc 50%, #8ec5fc 100%);
   background-size: 200% 200%;
   animation: bgMove 12s ease-in-out infinite;
@@ -18,9 +16,10 @@ body {
 @keyframes bgMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  100% { background-position: 0% 50%; } 
 }
 
+/* Navbar */
 .navbar {
   background: #fff;
   border-bottom: 1px solid #ddd;
@@ -62,7 +61,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .nav-links a::after {
   content: '';
   display: block;
@@ -75,17 +73,16 @@ body {
   transition: width 0.3s, left 0.3s;
   border-radius: 2px;
 }
-
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;
   left: 0;
 }
-
 .nav-links a:hover {
   background: #e6f0fa;
 }
 
+/* Glassmorphism for main containers */
 .header-content,
 .section,
 .footer {
@@ -101,17 +98,14 @@ body {
   box-shadow: 0 8px 32px 0 rgba(0,116,217,0.08);
 }
 
+/* Section styling */
 .section {
-  background: #fff;
   margin: 2rem 0;
-  padding: 2rem;
   border-radius: 0.7rem;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
-  opacity: 1;
-  transform: none;
-  transition: none;
 }
 
+/* Card grid */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -121,6 +115,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Card with animated border and hover */
 .card {
   background: #f8f9fa;
   border: 1px solid #e0e0e0;
@@ -135,8 +130,8 @@ body {
     border 0.25s;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
-
 .card::before {
   content: "";
   position: absolute;
@@ -149,37 +144,27 @@ body {
   opacity: 0.5;
   animation: borderMove 8s linear infinite;
 }
-
 @keyframes borderMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 .card:hover {
-  background: linear-gradient(90deg, #e6f0fa 0%, #f8f9fa 100%);
-  color: #0074d9;
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 32px 0 #0074d933;
-  border: 1.5px solid #0074d9;
   box-shadow: 0 12px 40px 0 #0074d955, 0 2px 12px 0 #00b89433;
   transform: translateY(-10px) scale(1.04);
   border: 1.5px solid #00b894;
   background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
   color: #222;
 }
-
 .card h3 {
   margin-top: 0;
   color: #0074d9;
   font-size: 1.15rem;
   transition: color 0.2s;
 }
-
 .card:hover h3 {
   color: #005fa3;
 }
-
 .card a {
   display: inline-block;
   margin-top: 0.7rem;
@@ -194,7 +179,6 @@ body {
   border: none;
   box-shadow: 0 2px 8px 0 #0074d91a;
 }
-
 .card a:hover {
   background: #00b894;
   color: #fff;
@@ -209,7 +193,6 @@ body {
   font-size: 2rem;
   margin-bottom: 1.2rem;
 }
-
 .section h2::after {
   content: '';
   display: block;
@@ -220,7 +203,6 @@ body {
   background: linear-gradient(90deg, #00b894, #0074d9);
   animation: underlineMove 2.5s infinite alternate;
 }
-
 @keyframes underlineMove {
   0% { width: 60%; }
   100% { width: 90%; }
@@ -246,106 +228,39 @@ body {
   z-index: 2000;
   transition: background 0.3s, box-shadow 0.3s;
 }
-
 .fab:hover {
   background: linear-gradient(135deg, #0074d9, #00b894);
   box-shadow: 0 8px 32px 0 #00b89499;
 }
 
-/* ===== Modern Features ===== */
-
-/* 1. Glassmorphism effect for cards and sections */
-.section,
-.header-content,
-.footer {
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 8px 32px 0 rgba(0,116,217,0.08);
-}
-
-/* 2. Animated gradient border for cards */
-.card {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.card::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  z-index: -1;
-  background: linear-gradient(120deg, #e0c3fc, #8ec5fc, #00b894, #0074d9);
-  background-size: 300% 300%;
-  border-radius: inherit;
-  filter: blur(2px);
-  opacity: 0.5;
-  animation: borderMove 8s linear infinite;
-}
-@keyframes borderMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* 3. Card shadow pop and scale on hover */
-.card:hover {
-  box-shadow: 0 12px 40px 0 #0074d955, 0 2px 12px 0 #00b89433;
-  transform: translateY(-10px) scale(1.04);
-  border: 1.5px solid #00b894;
-  background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
-  color: #222;
-}
-
-/* 4. Animated underline for navbar links */
-.nav-links a {
-  position: relative;
-  overflow: hidden;
-}
-.nav-links a::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #00b894, #0074d9);
-  transition: width 0.3s, left 0.3s;
-  border-radius: 2px;
-}
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 100%;
-  left: 0;
-}
-
-/* 5. Floating action button for quick scroll to top */
-.fab {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  width: 48px;
-  height: 48px;
-  background: linear-gradient(135deg, #00b894, #0074d9);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 16px 0 #0074d955;
+/* Search bar styles */
+.search-bar-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 2000;
-  transition: background 0.3s, box-shadow 0.3s;
-}
-.fab:hover {
-  background: linear-gradient(135deg, #0074d9, #00b894);
-  box-shadow: 0 8px 32px 0 #00b89499;
+  align-items: center;
+  padding: 1.2rem 0 0.5rem 0;
+  background: transparent;
 }
 
-/* 6. Responsive font and padding improvements */
+.search-bar {
+  width: 320px;
+  max-width: 90vw;
+  padding: 0.6rem 1.2rem;
+  border: 1.5px solid #e0c3fc;
+  border-radius: 2rem;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(224,195,252,0.08);
+}
+
+.search-bar:focus {
+  border: 1.5px solid #0074d9;
+  box-shadow: 0 4px 16px 0 #8ec5fc55;
+}
+
+/* Responsive font and padding improvements */
 @media (max-width: 900px) {
   .header-content,
   .section,
@@ -357,7 +272,6 @@ body {
     font-size: 1rem;
   }
 }
-
 @media (max-width: 600px) {
   .navbar, .header-content, .section, .footer {
     padding: 0.5rem;
@@ -380,5 +294,10 @@ body {
     width: 40px;
     height: 40px;
     font-size: 1.5rem;
+  }
+  .search-bar {
+    width: 100%;
+    font-size: 0.98rem;
+    padding: 0.5rem 1rem;
   }
 }
