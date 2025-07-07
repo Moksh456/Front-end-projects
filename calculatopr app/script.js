@@ -7,7 +7,11 @@ let String = "";
 let inputarr = Array.buttons;
 
 buttons.forEach(buttons => {
-    buttons.addEventListener("click", )
+    buttons.addEventListener("click", ()=>{
+        
+  
+
+    })
     }
 
 )
