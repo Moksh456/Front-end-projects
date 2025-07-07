@@ -4,11 +4,14 @@ console.log(buttons)
 
 let input = document.querySelector("input")
 let String = "";
+let inputarr = Array.buttons;
 
-buttons.forEach(e => {
-        e.addEventListener("click",  ()=> {
-            
-        }
-        )
-})
+buttons.forEach(buttons => {
+    buttons.addEventListener("click", )
+    }
+
+)
+                
+                
+ 
 
