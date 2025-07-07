@@ -56,5 +56,20 @@ button{
 }
 .plus{
    background-color:  #6dee0a;
-   
+
 }
+.minus{color: green;
+font-size: 12px;
+}
+.divide{color: green}
+.root{color: green}
+.AC{color: green}
+.c{
+   color: green 
+}
+.multi{
+    color: green
+}
+.precentage{
+color: green
+    }
