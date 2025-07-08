@@ -18,7 +18,7 @@ buttons.forEach(button => {
         }
         if (value === 'C') {
             input.value = value.substring(0, value.lenght  -1);
-        } else if (value === '=') {``
+        } else if (value === '=') {
             try {
                 input.value = eval(input.value);
             } catch {
