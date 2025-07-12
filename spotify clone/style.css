@@ -1,15 +1,9 @@
 .border{
-    bottom: 2px solid red;
+    border: 2px solid black;
+    margin: 3px;
 }
-.flex{
-    display: flex;
-}
-.justify-content{
-    justify-content: center;
-}
-.alignment-center{
-    align-items: center;
-}
+ 
+
 
 .left{
     width: 25vw;
