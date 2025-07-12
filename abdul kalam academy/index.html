@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Abdul Kalam Computer Center</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scroll for nav links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 40;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    });
+    </script>
+    <style>
+    nav a.active {
+        color: #f6b93b;
+        border-bottom: 2px solid #f6b93b;
+        padding-bottom: 2px;
+    }
+    </style>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f8fb;
+            color: #222;
+        }
+        header {
+            background: #0a3d62;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background: #3c6382;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #f6b93b;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            padding: 30px 40px;
+        }
+        .features, .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .feature, .course {
+            flex: 1 1 250px;
+            background: #f1f2f6;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            text-align: center;
+        }
+        .feature h3, .course h3 {
+            margin-top: 0;
+            color: #0a3d62;
+        }
+        .owner-info {
+            background: #eaf0fb;
+            border-left: 5px solid #0a3d62;
+            padding: 18px 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact h2 {
+            color: #0a3d62;
+        }
+        .contact p {
+            font-size: 1.1em;
+        }
+        @media (max-width: 800px) {
+            .container {
+                padding: 20px 10px;
+            }
+            .features, .courses {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. Abdul Kalam Computer Center</h1>
+        <p>High Advance Computer Institute | Fully AC Rooms | Highly Qualified Staff</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <div class="owner-info">
+                <strong>Institute Owner:</strong> Mr. Sandeep Sakkarwal<br>
+                <strong>Mobile:</strong> 98128-41019
+            </div>
+            <h2>About Us</h2>
+            <p>
+                Dr. Abdul Kalam Computer Center is a leading institute offering advanced computer education in fully air-conditioned rooms with highly qualified staff. We provide tuition classes for students from 1st to 12th standard and graduation level. Our mission is to empower students with the latest computer skills and knowledge.
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Fully AC Rooms</h3>
+                    <p>Comfortable and modern classrooms for effective learning.</p>
+                </div>
+                <div class="feature">
+                    <h3>Qualified Staff</h3>
+                    <p>Experienced and certified instructors for all subjects.</p>
+                </div>
+                <div class="feature">
+                    <h3>All Levels</h3>
+                    <p>Tuition for 1st-12th and graduation students.</p>
+                </div>
+            </div>
+        </section>
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div class="courses">
+                <div class="course">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, and more.</p>
+                </div>
+                <div class="course">
+                    <h3>Digital Marketing</h3>
+                    <p>SEO, Social Media, Google Ads, and more.</p>
+                </div>
+                <div class="course">
+                    <h3>Graphic Designing</h3>
+                    <p>Photoshop, CorelDRAW, Illustrator, and more.</p>
+                </div>
+                <div class="course">
+                    <h3>Stenography</h3>
+                    <p>Professional steno training for government exams.</p>
+                </div>
+                <div class="course">
+                    <h3>Accounting (Tally ERP 9 &amp; Tally Prime)</h3>
+                    <p>Comprehensive accounting courses for all levels.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>
+                <strong>Dr. Abdul Kalam Computer Center</strong><br>
+                Owner: Mr. Sandeep Sakkarwal<br>
+                Mobile: <a href="tel:9812841019">98128-41019</a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>
