@@ -44,6 +44,7 @@
 .border{
     border: 4px solid rgb(62, 48, 48);
     margin-top: 5px;
+
     
 }
 
@@ -70,6 +71,7 @@ header{
 
 
 
+
 header button{
 
 
@@ -93,7 +95,10 @@ header button:hover{
 }
 .heading{
     text-align: center;
-    width: 28ch;
+    width:15ch ;
+        font-size: 90px;
+    font-family: cursive;
+    font-style: oblique;
 }
 button{
     cursor: pointer;
@@ -103,6 +108,13 @@ button{
      display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px;
+    padding: 40px;
+    font-size: 28px;
+     
+   
+    font-family: monospace;
+    font-style: italic;
 }
 
 .button button{
@@ -118,3 +130,8 @@ button{
 .button button:hover{
     background-color: rgb(198, 43, 90);
 }
+
+h1{
+ font-size: 90px;
+}
+
