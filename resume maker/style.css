@@ -10,10 +10,20 @@
     display: flex;
     width: 100vw;
     margin: auto;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
-    height: 59px
+    height: 59px;
      
+ }
+ nav h2{
+    background-color: rgb(104, 112, 112);
+    margin-left: 27px;
+ }
+
+
+ nav div{
+    background-color: rgb(104, 112, 112);
+    margin-right: 27px;
  }
  .btn{
         padding: 8px 19px;
