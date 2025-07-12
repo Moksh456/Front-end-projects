@@ -1,6 +1,11 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(28, 19, 19);
+    background-color: white;
+}
 .border{
-    border: 4px solid red;
+    border: 4px solid rgb(62, 48, 48);
     margin-top: 5px;
 }
 
@@ -13,6 +18,60 @@
     background-color: aqua;
     width: 70vw;
 }
-.side-bar{
+.conta{
+    display: flex;
+}
+
+header{
+    background-color: rgb(105, 117, 117);
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 9px;
+}
+
+header button{
+    cursor: pointer;
     background-color: red;
+    border: none;
+    padding: 2px;
+
+}
+
+header button:hover{
+    background-color: rgb(211, 71, 71);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heading{
+    text-align: center;
+    width: 28ch;
+}
+button{
+    cursor: pointer;
+
+}
+.button{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    
+    margin: auto;
+    
+}
+.button button:hover{
+    background-color: rgb(198, 43, 90);
 }
