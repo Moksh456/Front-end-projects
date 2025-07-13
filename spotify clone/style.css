@@ -26,5 +26,17 @@
     padding-top: 18px;
     font-weight: bold;
 }
- 
-
+.heading{
+    display: flex;
+       gap: 15px;
+    width: 1200px;
+    list-style: none;
+    padding-top: 18px;
+    font-weight: bold;
+    align-items: center;
+    padding: 23px 14px;
+    font-size: 13px;
+}
+.heading img{
+    width: 30px;
+}
