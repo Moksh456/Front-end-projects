@@ -40,3 +40,19 @@
 .heading img{
     width: 30px;
 }
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a{
+    color: gray;
+}
+.library{
+    min-height: 50vh;
+    position: relative;
+    height: 80vh;
+}
