@@ -36,3 +36,48 @@
 }
 
 
+.card-container {
+  max-height: 70vh; /* Adjust height as needed */
+  overflow-y: auto;
+  /* Optional padding, background, and smooth scrolling */
+  padding-right: 4px;
+  background: #1a1a1a;
+  color: #eee;
+  scroll-behavior: smooth;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+  padding: 10px;
+}
+.card-container:hover {
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.card-container::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+.card-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.card-container::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card-container:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+.card-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Optional corner styling */
+.card-container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
