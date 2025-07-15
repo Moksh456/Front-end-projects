@@ -7,3 +7,4 @@ async function main(){
     let div = document.createElement("div");
     div.innerHTML = response;
 }
+main();
