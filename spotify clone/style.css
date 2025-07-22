@@ -172,7 +172,7 @@
 .play-bar{
     position: absolute;
     bottom: 0;
-    background-color: green;
+    background-color: rgb(129, 195, 129);
     width: 100%;
     padding: 12px;
 }
@@ -182,5 +182,6 @@
         justify-content: center;
         gap: 25px;
 }
+
 
 
