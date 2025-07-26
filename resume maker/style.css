@@ -32,25 +32,43 @@ header *{
   font-size: 18px;
   margin-left: 10px;
 }
-.main-login{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 12px;
-  font-weight: 800;
-
-}
 .maincontainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
 }
 .login{
   font-weight: 700;
     color: #464444;
   font-size: 18px;
   display: flex;
-  gap: 5px;
+  gap: 25px;
+  
 }
+.h1{
+  width: 272px;
+}
+.main-login{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    
+}
+.center{
+width: 1500px;
+display: flex;
+justify-content: space-between ;
+
+}
+
+
+
+
+ 
+
+
 
  
