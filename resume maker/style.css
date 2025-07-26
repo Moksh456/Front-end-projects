@@ -45,4 +45,12 @@ header *{
   justify-content: center;
   align-items: center;
 }
+.login{
+  font-weight: 700;
+    color: #464444;
+  font-size: 18px;
+  display: flex;
+  gap: 5px;
+}
 
+ 
