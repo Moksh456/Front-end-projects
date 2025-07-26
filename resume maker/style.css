@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: poppins, sans-serif;
+}
+
+
+header{
+  background-color: black;
+  height: 60px;
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+header *{
+  color: #fff;
+}
+.new{
+  color:rgb(151, 236, 163); 
+  font-weight: bold;
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+}
+.source-code{
+  color: rgb(151, 236, 163);
+  font-weight: bold ;
+  font-family: poppins, sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.main-login{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  font-weight: 800;
+
+}
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
