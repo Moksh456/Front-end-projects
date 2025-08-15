@@ -1,0 +1,128 @@
+.main{
+   display: flex;
+}
+
+.left-section{
+    height: 1000px;
+   background-color: rgb(44, 47, 47);
+   padding: 1rem;
+    
+}
+
+#profile-image{
+       width: 28%;
+    border: 5px solid #fff;
+    border-radius: 16px;
+        display: block;
+    margin: auto;
+}
+.name{
+   font-size: 1.2rem;
+   font-size: 800;
+   color: #fff;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 0.8rem;
+   letter-spacing: 0.02px;
+}
+.job-oriented{
+   font-size: 1rem;
+   text-align: center;
+   padding: 0.8rem;
+   text-transform: uppercase;
+   color: #fff;
+}
+.description{
+   font-size: 13px;
+   text-align: center;
+   padding: 1rem;
+   color: #fff;
+}
+.contact-item{
+   display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+
+.contack-details{
+   margin-top: 1.5rem;
+   color: #fff;
+   font-size:18px;
+}
+.email{
+   margin-left: 11px;
+}
+.telephone{
+ margin-left: 11px;
+}
+.address{
+   margin-left: 11px;
+}
+.skills-section{
+   text-transform: uppercase;
+     text-align: center;
+     padding: 0rem 0.5rem;
+     color: #fff;
+}
+.skill{
+   text-align: left;
+   font-size: 0.6rem;
+   padding-bottom: 0.5rem;
+}
+.progress-bar{
+   height: 4px;
+   border: 0.5px solid white;
+   background-color: white;
+   width: 80%;
+}
+.progress-bar-css{
+   height: 4px;
+   border: 0.5px solid white;
+   background-color: white;
+   width: 65%;
+}
+.progress-bar-js{
+ height: 4px;
+   border: 0.5px solid white;
+   background-color: white;
+   width: 40%;
+}
+.skill{
+   margin-top: 2rem;
+   text-transform: uppercase ;
+}
+
+.right-main-content{
+   padding: 2rem 3rem;
+
+
+}
+.right-title{
+   font-size: 1.2rem;
+   font-weight: 700;
+   padding: 0.5rem;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.education-details-2{
+   display: flex;
+}
+.education-details{
+   display: flex;
+}
+.expereience{
+   font-size: 37px;
+}
+
+.left-section{
+   height: 100vh;
+   width: 50svh;
+}
+@media(max-width: 600px){
+   .main{
+       display: contents;
+   }
+}
+
