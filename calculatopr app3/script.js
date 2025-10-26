@@ -1,4 +1,4 @@
-// Select the input (no class) and all buttons with class 'buttons'
+ // Select the input (no class) and all buttons with class 'buttons'
 const input = document.querySelector('input');
 const buttons = document.querySelectorAll("button");
 // Create an array from the NodeList of buttons
@@ -31,4 +31,5 @@ buttons.forEach(button => {
         }
     
     });
+
 });
